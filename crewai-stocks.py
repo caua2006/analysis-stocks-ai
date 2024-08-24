@@ -25,10 +25,8 @@ yahoo_finance_tool = Tool(
     func = lambda ticket: fetch_stock_price(ticket),
 )
 
-#os.environ['OPENAI_API_KEY']= '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'
-#llm = ChatOpenAI(model="gpt-3.5-turbo")
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCMITw6MRAcNu0lk_uS5Z-yXBuw732XULc"
+
 
 
 llm = ChatGoogleGenerativeAI(
